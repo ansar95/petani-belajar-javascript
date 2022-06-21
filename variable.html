@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Variable</title>
+</head>
+<body>
+    <script>
+        //variable dengan kata kunci var
+        var title = "Belajar Pemrograman Javascript";
+        var siteName = "RSUD Kota Makassar";
+        var url = "https://www.rsudkotamakassar.or.id";
+        var visitorCount = 15000;
+        var isActive = true;
+        var stockActive = 50;
+        var undefined;
+        //variable dengan kata kunci let
+        let price = 150000;
+
+        price = 10000;
+        //variable tampa awalan apapun
+        stockActive = 12;
+
+        //menampilkan variable ke jendela dialog (Alert)
+        alert("Selamat datang di " + siteName);
+
+        // menampilkan variable ke dalam HTML
+        document.write("Nama Situs: " + siteName + "<br>");
+        document.write("Jumlah Pengunjung: " + visitorCount + "<br>");
+        document.write("Status Aktif: " + isActive + "<br>");
+        document.write("Alamat URL: " + url + "<br>");
+        document.write("jumlah aktif: " + stockActive + "<br>");
+        document.write("Harga: " + price + "<br>");
+        // cek tipe data menggukan typeof
+        console.log(typeof undefined);
+        console.log(typeof siteName); 
+        console.log(typeof price);
+        console.log(typeof isActive);
+    </script>
+</body>
+</html>
