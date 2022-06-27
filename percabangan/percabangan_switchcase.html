@@ -7,6 +7,8 @@
   <title>Percabangan Switch/case</title>
 </head>
 <body>
+
+  <!--- contoh 1 
   <script>
     var jawab = prompt ("Kamu Beruntung! pilih angka 1 sampai 5 untuk dapat hadiah");
     var hadiah = "";
@@ -38,8 +40,43 @@
       document.write("<h2>Selamat kamu mendapatkan " + hadiah +"</h2>");
     }
 
-
-
   </script>
+-->
+
+<!-- contoh 2-->
+<script>
+var nilai = prompt ("input nilai");
+var grade = "";
+
+switch(true){
+  case nilai < 90:
+    grade = "A";
+    break;
+  case nilai < 80:
+    grade = "B+";
+    break;
+  case nilai < 70:
+    grade = "B";
+    break;
+  case nilai < 60:
+    grade = "C+";
+    break;
+  case nilai < 50:
+    grade = "C";
+    break;
+  case nilai < 40:
+    grade = "D";
+    break;
+  case nilai < 30:
+    grade = "E";
+    break;
+  default:
+    grade="F";
+  }
+document.write(`<p>nilai ujian anda: ${nilai}<p>`);
+  document.write("<h2>Selamat kamu mendapatkan " + nilai +"</h2>");
+           
+        </script>
+      
 </body>
 </html>
