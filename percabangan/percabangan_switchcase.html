@@ -48,7 +48,7 @@
 var nilai = prompt ("input nilai");
 var grade = "";
 
-switch(true){
+switch(false){
   case nilai < 90:
     grade = "A";
     break;
@@ -73,9 +73,14 @@ switch(true){
   default:
     grade="F";
   }
-document.write(`<p>nilai ujian anda: ${nilai}<p>`);
-  document.write("<h2>Selamat kamu mendapatkan " + nilai +"</h2>");
-           
+
+  if(grade ===""){
+      document.write("<p>Kamu gagal mendapatkan grade</p>");
+      
+    }else{
+      document.write("<h2>Selamat kamu mendapatkan " + grade +"</h2>");
+    }
+
         </script>
       
 </body>
