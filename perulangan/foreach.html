@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perulangan Foreach</title>
+</head>
+<body>
+
+  <!--contoh 1 tanpa in-->
+  <script>
+  var languages = ["Javascript", "HTML", "CSS", "Typescript" ];
+
+  for (i = 0; i < languages.length; i++){
+    document.write(i+ ". "+ languages[i] + "<br/>" );
+  }
+  </script>
+ <!--contoh 2 dengan  in-->
+ <br>
+  <script>
+    var languages = ["Javascript", "HTML", "CSS", "Typescript" ];
+
+    for(i in languages){
+      document.write(i+ ". "+ languages[i] + "<br/>");
+    }
+  </script>
+
+   <!--contoh 3 forEach()-->
+   <script>
+    //kita punya array
+    var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+
+    //tampilkan hari menggukan methot forEach()
+days.forEach(function(day){
+  document.write("<p>" + day + "</p>");
+});
+
+   </script>
+
+<br>
+
+   <!--contoh 4 forEach() menggunkan arrow function-->
+   <script>
+    //kita punya array
+    var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+
+    //tampilkan hari menggukan methot forEach()
+days.forEach((day) => {
+  document.write("<p>" + day + "</p>");
+});
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bersarang (Nested)</title>
+</head>
+<body>
+  <!--contoh 1 
+  <script>
+    for(let i = 1; i <= 5; i++){
+      for(let j = 0; j <= 5; j++){
+        document.write("<p> Perulangan ke" + i + "," + j + "</p>" );
+      }
+    }
+  </script>
+  -->
+<!-- contoh 2-->
+  <script>
+var nested = confirm("apakah anda ingin mengulan?");
+var counter = 0;
+
+while(nested) {
+  counter++;
+  var bintang = "*".repeat(counter) + "<br>";
+  document.write(counter + ":" + bintang);
+  nested = confirm("ulangi lagi");
+}
+  </script>
+</body>
+</html>
