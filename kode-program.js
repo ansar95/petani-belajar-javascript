@@ -1,1 +1,1 @@
-alert("Hello, ini adalah program JS eksternal dari file embed");
+alert("Hello, ini adalah program JS eksternal dari file embed.HTML");
