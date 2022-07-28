@@ -9,20 +9,26 @@
 <body>
   <script>
 //menbuat array
-const product = ["harddisk", "RAM", "layar", "Mouse", "Keyboard"];
-
-const adaharddisk = product.includes("harddisk");
-
-const adakopi = product.includes("kopi");
-
-console.log(adaharddisk);
-console.log(adakopi);
-
+const product = ["harddisk", "RAM", "layar", "Mouse", "Keyboard", "Api"];
+const angka = [9, 2, 2, 5, 6, 8, 1];
 //mengambil array
+//urutkan data
+const sortProduct = product.sort();
+const sortAngka = angka.sort();
+ 
+//tampilkan di console.log
+console.log(sortAngka);
+console.log(sortProduct);
+
+//tampilkan di broser
 document.write("<h3>Daftar produk : </h3>");
 document.write("<ol>");
 
-product.forEach((data) => {
+sortProduct.forEach((data) => {
+  document.write(`<li>${data}</li>`);
+});
+
+sortAngka.forEach((data) => {
   document.write(`<li>${data}</li>`);
 });
 
