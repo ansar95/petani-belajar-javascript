@@ -9,17 +9,20 @@
 <body>
   <script>
 //menbuat array
-const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+const product = ["harddisk", "RAM", "layar", "Mouse", "Keyboard"];
 
-//mengambil data yang bisa di bagi 2
-const filterArray = angka.filter((item) => {return item % 3 === 0});
+const adaharddisk = product.includes("harddisk");
 
+const adakopi = product.includes("kopi");
+
+console.log(adaharddisk);
+console.log(adakopi);
 
 //mengambil array
 document.write("<h3>Daftar produk : </h3>");
 document.write("<ol>");
 
-filterArray.forEach((data) => {
+product.forEach((data) => {
   document.write(`<li>${data}</li>`);
 });
 
