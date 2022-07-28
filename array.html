@@ -9,16 +9,17 @@
 <body>
   <script>
 //menbuat array
-const product = ["harddisk", "RAM", "layar", "Mouse", "Keyboard"];
+const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
 
-//mengubah isi array
-product[1] = "memori";
+//mengambil data yang bisa di bagi 2
+const filterArray = angka.filter((item) => {return item % 3 === 0});
+
 
 //mengambil array
 document.write("<h3>Daftar produk : </h3>");
 document.write("<ol>");
 
-product.forEach((data) => {
+filterArray.forEach((data) => {
   document.write(`<li>${data}</li>`);
 });
 
