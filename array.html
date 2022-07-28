@@ -11,20 +11,8 @@
 //menbuat array
 const product = ["harddisk", "RAM", "layar", "Mouse", "Keyboard"];
 
-//menambah data pada index
-product.push ("teh", "kopi");
-
-// menghapus data array dengan index
-delete product[1]; 
-
-// menghapus data array dari belakang
-product.pop();
-
-// menghapus data array dari depan
-product.shift();
-
-// menghapus data array dengan index tertentu
-product.splice(1, 3);
+//mengubah isi array
+product[1] = "memori";
 
 //mengambil array
 document.write("<h3>Daftar produk : </h3>");
