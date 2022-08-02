@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objek</title>
+</head>
+<body>
+  <!-- membuat class objek dengan `this` ES5
+  <script>
+    const person = {
+      firsName: "ansar",
+      lastName: "sattu",
+        fullName: function(){
+          alert(`Nama: ${this.firsName} ${this.lastName} `);
+        }
+    };
+
+    person.fullName();
+    
+  </script>
+  -->
+  <!-- membuat class objek dengan `this` ES6-->
+  <script>
+    function Person(firsName, lastName){
+      //properti
+      this.firsName = firsName;
+      this.lastName = lastName;
+
+      ///method 
+      this.fullName = function() {
+        return `${this.firsName} ${this.lastName}`;
+      }
+      this.showName = function(){
+        document.write(this.fullName());
+      }
+    };
+
+    const person1 = new Person("Athifa", "Fadila");
+    const person2 = new Person("Ansar", "Sattu");
+    const person3 = new Person("Risqi", "Yatul");
+
+
+    person1.showName();
+    document.write("<br>");
+    person2.showName();
+    document.write("<br>");
+    person3.showName();
+  </script>
+</body>
+</html>
